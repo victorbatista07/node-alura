@@ -1,0 +1,658 @@
+HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-NET-MVC5)
+	01 - O que é HTTP?
+	02 - A web segura - HTTPS
+	03 - Endereços sob seu domínio
+	04 - O cliente pede e o servidor responde
+	05 - Depurando a requisição HTTP
+	06 - Parâmetros da requisição
+	07 - Serviços na web com REST
+	08 - HTTP2 - Por uma web mais eficiente
+JavaScript: Programando na linguagem da web
+	01 - Introdução
+		01 - Sim, o curso foi atualizado!
+		02 - Por que aprenderJavascript?
+		03 - Por que estudar Javascript? (B)
+		04 - Olá Mundo com JavaScript
+		05 - Interpretando scripts no navegador (C)
+		06 - Uma mensagem no navegador (D)
+		07 - Query Selector
+		08 - Boas Práticas
+		09 - Estrutura do curso
+		10 - Console do desenvolvedor (B / C / D / E)
+		11 - Importando um arquivo externo (A)
+		12 - Mensagem de boas vindas (B)
+		13 - Um tal de document (B)
+		14 - Apenas um pedacinho... (A)
+		15 - Mãos na massa: Download Inicial e Setup
+		16 - Mãos na massa: O primeiro Javascript
+	02 - Variáveis e Operadores
+		01 - Buscando dados do paciente
+		02 - Acessando elementos dentro de outro elemento (A)
+		03 - O prato do dia (C)
+		04 - Calculando e exibindo o IMC corretamente
+		05 - Desmembrando uma instrução em variáveis (A)
+		06 - O indicador enviesado (B)
+		07 - Operadores Lógicos
+		08 - Validando e exibindo resultado (A)
+		09 - Informações escapando (A / C)
+		10 - Restrigindo o acesso (B)
+		11 - Mãos na Massa: Calculando o IMC
+		12 - Mãos na Massa: Validando os dados do usuário
+	03 - Arrays, Loop e Estilos
+		01 - Replicando a validação e o cálculo do IMC para todos os pacientes
+		02 - Estilos com JavaScript
+		03 - Calculando gastos (C)
+		04 - Seleção falhando (B / D)
+		05 - Um parágrafo azul (A)
+		06 - Mas e se for o fundo? (C)
+		07 - Acessando as classes (E)
+		08 - Modificando os titulos (B)
+		09 - Mãos na Massa: O IMC de todos os pacientes
+		10 - Mãos na Massa: Melhorando a visualização do erro
+	04 - Eventos, Formulários e Criando Elementos
+		01 - Escutando eventos
+		02 - O botão que falhou
+		03 - Copiando valores (C)
+		04 - Evitando o comportamento padrão de um evento
+		05 - Uma lista que não cresce (C)
+		06 - Adicionando pacientes na tabela
+		07 - De declaração de função para função anônima (A)
+		08 - Tem nome ou não? (B)
+		09 - Criando um elemento (B)
+		10 - Mãos na Massa: Criando o formulário de adição de pacientes
+		11 - Mãos na Massa: Adicionando um paciente na tabela
+		12 - Para saber mais: event shortcut
+	05 - Boas Práticas com Javascript
+		01 - Quebrando o código em arquivos diferentes
+		02 - Agulha no palheiro!
+		03 - Criando funções
+		04 - Criando um objeto paciente
+		05 - Objeto inválido (A)
+		06 - Melhorando ainda mais o código
+		07 - Sobre boas práticas de código (D)
+		08 - Quebrando o problema em partes menores
+		09 - Separando responsabilidades
+		10 - Mãos na massa: organizando o código em vários arquivos
+		11 - Mãos na massa: extraindo mais códigos
+	06 - Validação de Formulários
+		01 - Validando os dados do formulário
+		02 - Exibindo mensagens de erro
+		03 - Validando o restante dos campos
+		04 - Iterando com o forEach (C)
+		05 - A propriedade innerHTML (B)
+		06 - Porque não consigo modificar o HTML interno de um elemento?
+		07 - Mãos na massa: validando o form
+	07 - Remoção, Delegação e Animação
+		01 - Removendo pacientes
+		02 - Um duplo clique (C)
+		03 - Delegando eventos
+		04 - O escolhido foi você! (B)
+		05 - Analisando o código (A / B)
+		06 - Animando a remoção do paciente
+		07 - Mãos na massa: removendo os pacientes
+		08 - Mãos na massa: animando a remoção
+	08 - Filtrando uma tabela
+		01 - Filtrando os pacientes da tabela
+		02 - Verificando o tamanho da postagem (D)
+		03 - Implementando a lógica de filtragem
+		04 - Filtrando com expressão regular
+		05 - Criando uma Regex (C)
+		06 - Mãos na massa: filtrando a tabela
+		07 - Mãos na massa: buscando pacientes
+		08 - Para saber mais: filtrando sem regex?
+	09 - AjaxBuscando pacientes com AJAX
+		01 - Introdução ao AJAX
+		02 - O Objeto requisitor (D)
+		03 - Configurando nossa requisição (A)
+		04 - Tratando a resposta da requisição
+		05 - Capturando erros de requisição
+		06 - O XMLHttpRequest (B / C)
+		07 - Encerramento
+		08 - Mãos na massa: conectando com servidor
+		09 - Mãos na massa: adicionando os pacientes na tabela
+		10 - Mãos na massa: lidando com erros da requisição
+		11 - Download do projeto final
+Expressões regulares: Capturando textos de forma mágica
+	01 - Começando com Regex
+		01 - Começando a aprender Regex com Javascript
+		02 - (Obrigatório) Projeto de execução
+		03 - Regex Engine (B)
+		04 - Meta Caracteres (C)
+		05 - O nosso primeiro problema
+		06 - Mão na massa - Encontrando o CNPJ
+		07 - Mão na massa - Encontrando o IP (D)
+		08 - Mão na massa - Encontrando o CEP
+		09 - Mão na massa - Buscando o telefone (D)
+		10 - Para que servem Regex? (D)
+		11 - O que aprendemos?
+		12 - Arquivos do projeto atual
+	02 - Classes de caracteres
+		01 - Entendendo Classes de Caracteres
+		02 - Mãos na massa: Ajudando Alura
+		03 - Qual é a classe? (B)
+		04 - Praticando classes e quantifier
+		05 - Trabalhando com horários (D)
+		06 - Mão na massa: Reconhecendo a placa de um veículo
+		07 - Mão na massa: expressão regular a favor dos alunos!
+		08 - Mão na massa: Uma expressão regular incorreta pode prejudicar alguém
+		09 - Mão na massa: Separando joio do trigo
+		10 - Mais sobre classes (B)
+		11 - Opcional: Validando o usuário no serviço Rest
+		12 - Para saber mais: Melhorando a legibilidade
+		13 - O que aprendemos?
+		14 - Arquivos do projeto atual
+	03 - Encontrando a posição certa com âncoras
+		01 - Selecionando com âncoras
+		02 - O que são âncoras?
+		03 - Âncoras de início (^) e fim ($)
+		04 - Mão na massa: Encontrando o número de um CPF (A)
+		05 - Mão na massa: Encontrando uma string que comece com determinada expressão
+		06 - Mão na massa: Encontrando uma expressão de data (D)
+		07 - Mão na massa: Extensão de arquivo (D)
+		08 - Para saber mais: \B
+		09 - Para saber mais: Âncoras no Python
+		10 - O que aprendemos ?
+		11 - Arquivos do projeto atual
+	04 - Trabalhando com grupos
+		01 - Trabalhando com Grupos
+		02 - Excluindo grupos que não queremos (D)
+		03 - Mão na massa: CPF e o digito verificador
+		04 - Mão na massa: o detetive e a mensagem criptografada
+		05 - Mão na massa: Tratando Exceptions
+		06 - Desafio #1: Ajudando a Alura
+		07 - Desafio #2: Validando email
+		08 - Desafio #3: Ajudando os Correios
+		09 - O que aprendemos?
+		10 - Arquivos do projeto atual
+	05 - Ganancioso ou preguiçoso
+		01 - Expressões gananciosas
+		02 - Mão na massa: Entendendo quantifiers gananciosos (B)
+		03 - O recurso de backreference
+		04 - Validando a prioridade da mensagem (D)
+		05 - Para saber mais : Tudo que não é!
+		06 - Para saber mais: Tudo que não é #2
+		07 - O que aprendemos?
+	06 - Usando regex nas diversas linguagens
+		01 - Introdução
+		02 - [JavaScript] Regex com JS
+		03 - [JavaScript] Uso de expressões regulares
+		04 - [JavaScript] Alterando o formato de uma data
+		05 - [JavaScript] O poder do `split`
+		06 - [JavaScript] O retorno de match!
+		07 - [JavaScript e HTML] A praticidade do atributo pattern
+		08 - [Ruby] Regex com Ruby
+		09 - [Ruby] Uso de expressões regulares
+		10 - [Ruby] Escaneando a string
+		11 - [Ruby] Gsub, sub e outros
+		12 - [PHP] Regex com PHP
+		13 - [PHP] Alterando o formato de uma data
+		14 - [PHP] Alterando o separador de uma data
+		15 - [Python] Regex com Python
+		16 - [Python] O método findall
+		17 - [Python] Alterando o separador de uma data
+		18 - [C#] Regex no mundo .NET
+		19 - [C#] Alterando o formato de uma data
+		20 - [C#] Alterando o separador
+		21 - [Java] Regex como Java
+		22 - [Java] Alterando o formato de uma data
+		23 - [Java] Alterando o separador
+		24 - [Bash] RegEx em Bash (C)
+		25 - (Opcional) Analise a regex
+		26 - Para saber mais: Outras ferramentas
+		27 - Arquivos do projeto atual
+JavaScript Avançado I: ES6, orientação a objetos e padrões de projetos
+	01 - Prólogo: regras, código e manutenção
+		01 - Visão geral do projeto
+		02 - (Obrigatório) Download do projeto e infraestrutra
+		03 - Prólogo: regras, código e manutenção
+		04 - Enrolando-se com o DOM
+		05 - Sentindo na pele o prólogo
+	02 - Especificando uma Negociação
+		01 - O que é um modelo?
+		02 - A classe Negociação
+		03 - Construtor da classe e métodos
+		04 - Encapsulamento
+		05 - A sintaxe get
+		06 - Objetos imutáveis
+		07 - A instância é imutável mesmo?
+		08 - Programação defensiva
+		09 - Substituindo var por let
+		10 - Resumindo
+		11 - Pequeno conto sobre orientação a objetos
+		12 - Declaração de classes (C)
+		13 - Atributos de instância (A)
+		14 - O operador new
+		15 - Constructor e parâmetros
+		16 - Métodos!
+		17 - Encapsulamento (A / C / D)
+		18 - Getters
+		19 - O resultado é... (C)
+		20 - Congelando um objeto (A)
+		21 - Imutável aonde meu filho!
+		22 - Varilândia ou Letícia? (C)
+		23 - Declarando duas vezes a mesma variável
+		24 - Date é uma classe?
+		25 - Consolidando seu conhecimento
+	03 - A ligação entre as ações do usuário e o modelo
+		01 - A classe NegociacaoController
+		02 - Associando métodos do controller às ações do usuário
+		03 - Evitando percorrer o DOM muitas vezes
+		04 - Criando uma instância de Negociacao
+		05 - Criando um objeto Date
+		06 - Executando ações de um controller (B)
+		07 - O problema com datas
+		08 - Resolvendo um problema com o paradigma funcional
+		09 - Arrow Functions: deixando o código ainda menos verboso
+		10 - Resumindo
+		11 - O modelo MVC (A / B / D)
+		12 - O que é má prática ontem pode ser boa prática hoje e vice-versa! (C)
+		13 - As múltiplas facetas do this (A)
+		14 - "Prefiro evitar a fadiga!"
+		15 - "Isso" não encaixa em um "Date"? Se vira!
+		16 - Mais de spread
+		17 - O "mapa" da mina!
+		18 - Ops, não encaixa. Podemos dar um jeitinho?
+		19 - Menos é mais!
+		20 - Consolidando seu conhecimento
+	04 - Lidar com data é trabalhoso? Chame um ajudante!
+		01 - Exibindo o objeto Date no formato dia/mês/ano
+		02 - Isolando a responsabilidade de conversão de datas
+		03 - Métodos estáticos
+		04 - Template Strings
+		05 - Criando nosso ListModel
+		06 - Blindando as negociações dentro da lista
+		07 - Resumindo
+		08 - Olhar aguçado para o paradigma da orientação a objetos
+		09 - O parâmetro não encaixa, e agora?
+		10 - Template String (A)
+		11 - E a lista de negociações? (B)
+		12 - Criando o "ajudante"
+		13 - Por que...
+		14 - Expressão regular ainda melhor
+		15 - Consolidando seu conhecimento
+		16 - Só tem métodos estáticos...
+	05 - Temos o modelo, mas e a view?
+		01 - Classes que representam nossas Views
+		02 - Construindo um template dinâmico com a função map
+		03 - Enxugando o código
+		04 - Totalizando o volume em nosso Template
+		05 - Totalizando o volume em nosso Template com a função reduce
+		06 - Resumindo
+		07 - Dominando o reduce (C)
+		08 - Um pouco mais sobre o reduce
+		09 - Reduce com arrow function
+		10 - Imprimindo com map
+		11 - Dominando o map (B)
+		12 - Map com arrow functions
+		13 - View declarada no JS ou no HTML?
+		14 - Consolidando seu conhecimento
+	06 - Generalizando a solução da nossa View
+		01 - Classe Mensagem
+		02 - Criando a classe MensagemView
+		03 - Herança e reutilização de código
+		04 - Construtor vs super
+		05 - Resumindo
+		06 - Sabendo ainda mais sobre herança
+		07 - Vantagem da herança (A)
+		08 - Modelando uma Conta
+		09 - Herdando de Conta
+		10 - Classes abstratas, tem como?
+		11 - Consolidando seu conhecimento
+		12 - Preparado para o próximo módulo?
+JavaScript Avançado II: ES6, orientação a objetos e padrões de projetos
+	01 - Como saber quando o modelo mudou?
+		01 - Você lembrou de atualizar a view? Nem eu!
+		02 - E se atualizarmos a view quando o modelo for alterado?
+		03 - API Reflection e as facetas de this
+		04 - Arrow function e seu escopo léxico
+		05 - Resumindo
+		06 - Você fez PARTE 1 antes?
+		07 - (Obrigatório) Infraestrutura
+		08 - Revisando arrow function e seu escopo léxico
+		09 - Contexto das arrows functions
+		10 - Mais um pouco de arrow function! (D)
+		11 - E tem espaço para self?
+		12 - Revisando Reflect.apply
+		13 - Reutilização de código com Composição e Mixin
+		14 - Function.apply vs Reflect.apply
+		15 - O padrão de projeto Observer
+		16 - Consolidando seu conhecimento
+	02 - Existe modelo mentiroso? O padrão de projeto Proxy!
+		01 - Modelo e reutilização em projetos
+		02 - O padrão de projeto Proxy
+		03 - Aprendendo a trabalhar com o Proxy
+		04 - Construindo armadilhas de leitura
+		05 - Construindo armadilhas de escrita
+		06 - Método que não altera propriedade
+		07 - Uma solução para método que não altera propriedade
+		08 - Construindo armadilhas para métodos
+		09 - Aplicando a solução no NegociacaoController
+		10 - Truque com ES2015
+		11 - Vantagens do Proxy (D)
+		12 - Target, prop ou receiver? (A)
+		13 - O Primeiro proxy a gente nunca esquece
+		14 - Proxy modificando retorno de método
+		15 - Proxy e peculiaridade com getters
+		16 - Mais um proxy, agora para lidar escrita!
+		17 - Um esclarecimento extra é sempre bom!
+		18 - Proxy e peculiaridade com setters
+		19 - Arguments
+		20 - Proxy Intercepta métodos? (B)
+		21 - Qual é o resultado? (D)
+		22 - Consolidando seu conhecimento
+	03 - E se alguém criasse nossos proxies? O Padrão de Projeto Factory
+		01 - Padrão de Projeto Factory
+		02 - Nosso proxy ainda não está 100%!
+		03 - Isolando a complexidade de associar o modelo com a view na classe Bind
+		04 - Parâmetros REST
+		05 - Será que cabe na cesta? (D)
+		06 - O padrão de projeto Factory (D)
+		07 - Mais fábrica
+		08 - Fábricas na API JavaScript
+		09 - DateHelper é um Factory?
+		10 - Consolidando seu conhecimento 1
+		11 - Consolidando seu conhecimento 2 (importante)
+	04 - Importando negociações
+		01 - Serviços disponíveis
+		02 - Requisições Ajax com o objeto XMLHttpRequest
+		03 - Realizando o parse da resposta
+		04 - Separando as responsabilidades
+		05 - O objeto XMLHttpRequest (D)
+		06 - Você sabia? Conheça a história do nome XMLHttpRequest
+		07 - Error-first Callback, nome chique!
+		08 - Que tal enviar dados para o servidor?
+		09 - Programação procedural não!
+		10 - Consolidando seu conhecimento
+	05 - Combatendo Callback Hell com Promises
+		01 - O problema da vida assíncrona
+		02 - O padrão de projeto Promise
+		03 - Pyramid of Doom novamente? Claro que não, Promise.all nela!
+		04 - Isolando a complexidade em HttpService
+		05 - Simplificando o código
+		06 - Dissecando uma promise!
+		07 - Declarando uma promise (C)
+		08 - Consolidando seus conhecimentos
+		09 - Simplificando ainda mais nosso código com promises
+		10 - Desafio: obter todas as negociações
+	06 - Considerações finais e exercícios bônus
+		01 - Considerações finais e exercícios bônus
+		02 - Ah se eu pudesse ordenar minha tabela clicando na coluna...
+		03 - Ah se meu HttpService fizesse mais coisa...
+		04 - Ah se meu código funcionasse no Firefox...
+		05 - Ah se meu código funcionasse no Safari...
+		06 - Ah se meu código funcionasse no Edge!
+		07 - Ah se meu código funcionasse em TODOS OS NAVEGADORES...
+		08 - Ah se ... peraí, o que é um transpiler mesmo?
+		09 - Ah se eu pudesse aplicar o que aprendi no Node.js...
+		10 - Download do projeto completo
+JavaScript Avançado III: ES6, orientação a objetos e padrões de projetos
+	01 - Guardando negociações offline com IndexedDB
+		01 - Relembrando
+		02 - Browser possui banco de dados? Conheça o IndexedDB!
+		03 - Comunicando-se com o banco usando o IDBDatabase
+		04 - Quero gravar em uma Object Store, mas onde está a transação?
+		05 - Só acredito vendo: listando objetos de uma store
+		06 - (Obrigatório) Você fez os módulos anteriores?
+		07 - (Obrigatório) Download do projeto e infraestrutra
+		08 - IndexedDB e considerações (B / D)
+		09 - A tríade de eventos (A / B)
+		10 - Onde está o Wally? (A)
+		11 - Store de uma transação (C)
+		12 - Incluiu ou não? (A)
+		13 - Listando dados de uma store (B)
+		14 - Não cria nova store. E agora? (A)
+		15 - Consolidando seu conhecimento
+	02 - Gerenciando nossa conexão com o pattern Factory
+		01 - Uma conexão ou várias?
+		02 - A classe ConnectionFactory
+		03 - Criando stores
+		04 - O padrão de projeto Module Pattern
+		05 - Monkey Patch: grandes poderes trazem grandes responsabilidades
+		06 - Esboço mínimo (B)
+		07 - Exportando funcionalidades de um módulo (ES5, ainda!) (B)
+		08 - O método getConnection (C)
+		09 - Monkey Patch (C)
+		10 - Variáveis imutáveis! (A)
+		11 - Consolidando seu conhecimento
+		12 - Para saber mais: variáveis declaradas com const são realmente imutáveis?
+		13 - Para saber mais: limite de espaço
+	03 - Padronizando acesso aos dados com o pattern DAO
+		01 - O padrão de projeto DAO
+		02 - Combinando padrões de projeto
+		03 - Exibindo todas as negociações
+		04 - Removendo todas as negociações
+		05 - O padrão DAO
+		06 - Método que devolve uma promise (B)
+		07 - Combinando ConnectionFactory e NegociacaoDao (C)
+		08 - Consolidando seu conhecimento
+		09 - Para saber mais: IndexedDB e transações
+		10 - Para saber mais: bibliotecas que encapsulam o IndexedDB
+	04 - Lapidando um pouco mais nossa aplicação
+		01 - Ops! Não podemos importar negociações duplicadas
+		02 - Comparação entre objetos
+		03 - Usando o método some
+		04 - Importando negociações automaticamente
+		05 - Melhorando a legibilidade e manutenção do nosso código
+		06 - Adicionando o método lista em NegociacaoService
+		07 - Isolando a complexidade do importaNegociacoes em NegociacaoService
+		08 - Comparação entre objetos (A / C)
+		09 - "Some"body help me! (C)
+		10 -  Promise mais elegante (C)
+		11 - Experimento com promise (A / B)
+		12 - Consolidando seu conhecimento
+		13 - Para saber mais: Igualdade de objetos
+		14 - Para saber mais: Outro critério de igualdade
+	05 - Simplificando requisições Ajax com a Fetch API
+		01 - xmlHttpRequest: será que existe algo de mais alto nível?
+		02 - Método Post
+		03 - Compatibilidade com uso de PolyFill
+		04 - Considerações sobre Fetch API (A / B / C)
+		05 - Onde está o erro?
+		06 - Consolidando seu conhecimento
+	06 - Tornando nosso código ainda mais compatível usando Babel
+		01 - O fantasma da incompatibilidade
+		02 - Babel, instalação e build-step
+		03 - Executando o Babel
+		04 - Compilando arquivos em tempo real
+		05 - Revisão: transpiler
+		06 - Sobre Babel (C / D)
+		07 - Onde foi que eu errei?
+		08 - Evitando Babel no escopo global (A)
+		09 - Sourcemap (D)
+		10 - Consolidando seu conhecimento
+		11 - Para saber mais: há limite para os transcompiladores?
+	07 - Trabalhando com módulos do ES2015!
+		01 - Escopo global e carregamento de scripts = dor de cabeça
+		02 - ES2015 e módulos
+		03 - Refatorando nosso código com import e export
+		04 - SystemJs
+		05 - O módulo boot.js
+		06 - Babel e transcompilação de módulos
+		07 - Delegação de eventos
+		08 - Trabalhando com módulos do ES2015!
+		09 - Sobre ES2015 modules (A / C)
+		10 - Importando um módulo (B)
+		11 - Delegação de eventos (A)
+		12 - Consolidando seu conhecimento
+		13 - Considerações finais
+		14 - Projeto final completo
+jQuery: Domine a biblioteca mais popular do mercado parte 1
+	01 - Introdução
+		01 - Apresentação
+		02 - Introdução ao jQuery
+		03 - Colocando o jQuery no projeto
+		04 - Primeiros passos com jQuery
+		05 - Sobre o que é o jQuery? (B)
+		06 - Vantagens do jQuery (E)
+		07 - jQuery emagreceu (D)
+		08 - Produção ou desenvolvimento? (B)
+		09 - Selecionando com jQuery (B / D / E / F)
+		10 - Pegando um texto (C)
+		11 - Alterando um template (A)
+		12 - (Obrigatório) Mãos na massa: Download inicial do projeto
+		13 - Mãos na massa: Contando as palavras da frase e atualizando o seu contador
+		14 - Aprenda mais: Antigas versões do jQuery
+		15 - Arquivos do projeto atual
+	02 - Escutando eventos com jQuery
+		01 - Eventos do jQuery
+		02 - Clicando com jQuery (A / D)
+		03 - É valor ou texto ? (A / C / E)
+		04 - Nome do evento (B)
+		05 - Tamanho da notícia (A)
+		06 - Mãos na massa: Contando através de eventos
+		07 - Arquivos do projeto atual
+	03 - GameOver com eventos
+		01 - Game Over com eventos
+		02 - Um evento de foco (B)
+		03 - Desabilitando um elemento com jQuery (C)
+		04 - Quantos eventos escutar? (B / E / F)
+		05 - É text(), val() ou attr()? (A)
+		06 - Mãos na massa: Game over
+		07 - Arquivos do projeto atual
+	04 - Reiniciando o jogo
+		01 - Reiniciando o jogo
+		02 - Um clique equivalente (A)
+		03 - Habilitando um campo (A)
+		04 - Mãos na massa: Botão para reinicializar o jogo
+		05 - Mãos na massa: Organizando o código
+		06 - (Opcional) Desabilitando o botão na hora certa
+		07 - Arquivos do projeto atual
+	05 - Funções que auxiliam os estilos
+		01 - Estilizando o jogo
+		02 - Adicionando ícones
+		03 - Marcação da borda
+		04 - O que é CSS?
+		05 - Valor da propriedade CSS (D)
+		06 - Adicionando estilos programaticamente (D)
+		07 - Adicionar ou remover a classe (D)
+		08 - CSS para alterar a cor (D)
+		09 - Mãos na massa: Aplicando CSS
+		10 - Mãos na massa: Usando ícones
+		11 - Mãos na massa: Verificando a digitação
+		12 - Para saber mais: substr com ES6
+		13 - Para saber mais: Materialize e Bootstrap
+		14 - Arquivos do projeto atual
+	06 - Criando e Manipulando elementos com jQuery
+		01 - Salvando a pontuação no placar
+		02 - Criando um botão remover
+		03 - Adicionando eventos nas linhas do placar
+		04 - Organizando o código da aplicação
+		05 - Finalizando o módulo
+		06 - Transformar em um objeto jQuery (C)
+		07 - Adicionando uma linha no fim de uma tabela (D)
+		08 - Adicionando uma compra (A)
+		09 - Subindo aos pais (C)
+		10 - Marcando clientes (C)
+		11 - Removendo um elemento (B / D)
+		12 - Criando elementos com jQuery (A)
+		13 - Mãos na massa: Armazenando a pontuação do usuário
+		14 - Mãos na massa: Removendo linhas do placar
+		15 - Mãos na massa: Organizando o nosso código
+		16 - Projeto Final do Curso
+jQuery: Avance na biblioteca mais popular do mercado parte 2
+	01 - Animações com jQuery
+		01 - Introdução
+		02 - Mostrando o placar
+		03 - Removendo com fade
+		04 - Melhorando a usabilidade
+		05 - Animando o scroll
+		06 - Existem 1000 maneiras de se fazer... (A / B / C / D)
+		07 - Escondendo ou exibindo de maneira elegante (B)
+		08 - Fade que não (B)
+		09 - Onde está o erro?
+		10 - Menu ioiô (B)
+		11 - Controlando o esmaecer (C)
+		12 - Mãos na massa: Exibindo e ocultando o placar
+		13 - Mãos na massa: Animando a remoção
+		14 - Mãos na massa: Animando a página na exibição do placar
+	02 - Buscando frases via Ajax
+		01 - Trocando as frases
+		02 - Ajax com get
+		03 - Arrumando tempo e texto
+		04 - (Obrigatório) Instalando e subindo o servidor
+		05 - Para levantar o servidor... (C)
+		06 - Mas para que AJAX? (A / B / C / D / E / G)
+		07 - E o verbo é... (C)
+		08 - Revisão
+		09 - Índice aleatório (A)
+		10 - Recebendo os dados (C / E)
+		11 - Mãos na massa: Frases diferentes para digitação
+		12 - Mãos na massa: Atualizando o tempo e contagem de palavras
+	03 - Tratando erros e melhorando a experiência
+		01 - Lidando com erros
+		02 - Implementando spinner
+		03 - Pra que a rodinha? (C)
+		04 - A ver navios... (C)
+		05 - Evitando instrução duplicada (C)
+		06 - Mãos na massa: Tratando erro
+		07 - Mãos na massa: Melhorando a usabilidade
+	04 - Enviando dados com AJAX
+		01 - Buscando dados com get
+		02 - Só quero uma fatia do bolo, não o bolo inteiro! (C)
+		03 - Será que passei? (B)
+		04 - Qual erro da requisição? (B / D / E)
+		05 - Mãos na massa: Carregando uma frase
+	05 - Enviando dados com POST
+		01 - Introdução
+		02 - Salvando placar
+		03 - Obtendo placar
+		04 - Detalhe remoção
+		05 - Iterando com jQuery (C)
+		06 - Enviando dados para o servidor (A)
+		07 - Mãos na massa: POST com jQuery
+		08 - Mãos na massa: Obtendo placar
+	06 - Same Origin Policy e Cors
+		01 - Same origin Policy e CORS
+		02 - O tal (A)
+		03 - Requisições Ajax e CORS (B / D)
+		04 - Mãos na massa: Testando Same Origin Policy
+		05 - Mãos na massa: Habilitando CORS
+	07 - Plugins do jQuery
+		01 - Slider com Slick
+		02 - Usuários com Selectize
+		03 - Notificação com Tooltipster
+		04 - Não funcionou...
+		05 - Selectize neles! (C)
+		06 - Onde está o meu tooltip?
+		07 - Mãos na massa: Carrossel com slick
+		08 - Mãos a obra: Selectize
+		09 - Mãos na massa: Tooltipster
+		10 - Finalização
+		11 - Download do projeto final
+JavaScript: Projeto de conclusão
+	01 - Introdução
+		01 - Introdução
+		02 - Download do projeto (Obrigatório) e infraestrutura
+		03 - Orientações Gerais
+	02 - Sprite
+		01 - Sprite - PARTE 1
+		02 - Gabarito - PARTE 1
+		03 - Gabarito - PARTE 2 - melhorando a legibilidade
+		04 - Gabarito - PARTE 3 - Revisão Closure
+		05 - Gabarito - PARTE 4 - a lógica do hasNext()
+		06 - Gabarito - PARTE 5 - revisão function declaration vs function expression
+		07 - Sprite - PARTE 2
+		08 - Gabarito
+	03 - Lógica do jogo
+		01 - Jogo - PARTE 1
+		02 - Gabarito
+		03 - Outra maneira para preencher lacunas
+		04 - Jogo - PARTE 2
+		05 - Gabarito
+		06 - Jogo - PARTE 3
+		07 - Gabarito
+	04 - A lógica de apresentação
+		01 - Apresentação - PARTE 1
+		02 - Gabarito
+		03 - Apresentação - PARTE 2
+		04 - Gabarito
+		05 - Apresentação - PARTE 3
+		06 - Gabarito
+		07 - Lidando com dados inválidos
+		08 - Com fácil manutenção, podemos deixar ainda melhor nossa aplicação
+	05 - Bônus: indo além com ES2015 (ES6)
+		01 - O código do Jogo
+		02 - O código do Sprite
+		03 - O código do controller
+		04 - Projeto final completo (download)
+		05 - Considerações finais

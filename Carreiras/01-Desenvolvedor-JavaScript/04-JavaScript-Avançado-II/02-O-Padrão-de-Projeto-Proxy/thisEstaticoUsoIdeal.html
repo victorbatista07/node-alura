@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        class SistemaImpressao {
+
+            constructor() {
+                this._codigo = 2;
+            }
+
+            imprime(nomes) {
+                // usando arrow function.
+                nomes.forEach(nome => {
+                    console.log(this);
+                    console.log(`${this._codigo}: ${nome}`);
+                });
+            }
+        }
+
+        let nomes = ['Flávio', 'Nico', 'Douglas'];
+        let si = new SistemaImpressao();
+        si.imprime(nomes);
+
+    </script>
+</body>
+</html>
+
+<!--
+    Temos a seguinte classe SistemaImpressao, que possui o método imprime. O método recebe uma lista e para cada item da lista imprime primeiro
+    a versão do sistema, seguido do item. O problema é que o this._codigo acessado em nosso forEach não é de uma instância da classe
+    SistemaImpressao, aliás, ele é undefined. Contudo, se usarmos arrow function, o this usado no forEach usará o this do contexto no qual foi
+    declarado.
+
+    Quando escrevo meu código dentro da tag <script>, trabalho no escopo de windo, ou seja, o escopo global.
+
+
+    Como Reflect.apply funciona? O primeiro parâmetro é o método ou função que desejamos invocar. O segundo parâmetro é o contexto que o método
+    ou função adotará, ou seja, o valor que será assumido pelo this. Por fim, o último parâmetro é um array que contém todos os parâmetros que
+    o método passado como primeiro parâmetro receberá. Como ele não recebe parâmetro nenhum, passamos um array vazio.
+-->

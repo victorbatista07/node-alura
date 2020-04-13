@@ -1,0 +1,31 @@
+TypeScript parte 1: Evoluindo seu Javascript
+	01 - Bem começado, metade feito
+		01 - Introdução
+		02 - Infraestrutura necessária (Obrigatório)
+		03 - O projeto e sua estrutura
+		04 - Modelando uma negociação
+		05 - ES2015 e classes (A)
+		06 - Colocando nosso código à prova
+		07 - Instalação e configuração do compilador
+		08 - Sobre o compilador do TypeScript (C)
+		09 - Modelando com TypeScript
+		10 - TypeScript e classes (B)
+		11 - Automatizando o processo de compilação
+		12 - Revisão
+		13 - Consolidando seu conhecimento
+	02 - Benefícios da tipagem estática
+		01 - Capturando os dados do formulário
+		02 - O tipo implícito any
+		03 - Sobre o tipo any (B / C)
+		04 - Tipando explicitamente
+		05 - Para saber mais: string v String e number vs Number
+		06 - Um problema não esperado
+		07 - Casting explícito
+		08 - Sobre casting explícito (A)
+		09 - Adequando valores aos tipos
+		10 - Para saber mais: input type Date no Microsoft Edge e no Firefox
+		11 - Sobre o código (A)
+		12 - Revisão
+		13 - Consolidando seu conhecimento
+	03 - Elaborando uma solução de view
+		01 - 

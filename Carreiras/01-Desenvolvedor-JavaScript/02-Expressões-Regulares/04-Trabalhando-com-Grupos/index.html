@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Alura - Expressões regulares</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css"> 
+</head>
+
+<body class="container">
+    
+    <h1 class="text-left">Expressões regulares</h1>
+    
+    <form class="form" >
+        
+        <div class="form-group">
+            <label for="target">Target string (alvo)</label>
+            <input type="text" id="target" class="form-control" value="" autocomplete="off" required autofocus placeholder="Digite um target" />        
+        </div>    
+        
+        <div class="form-group">
+            <label for="pattern">Pattern (expressão regular)</label>
+            <input type="text" id="pattern" class="form-control" value="" autocomplete="off" required  placeholder="Digite um pattern"/>
+        </div>
+
+        <div class="form-group">                
+            <button class="btn btn-primary" onclick="executa(event)">Executar Regex</button>
+        </div>
+
+        <div class="checkbox">
+            <label><input type="checkbox" id="mostraIndex" value="true" />Mostra índice </label>
+            <label></label>
+            <label><input type="checkbox" id="mostraGrupos" value="true" />Mostra grupos </label>
+        </div>
+
+        <div class="form-group">
+            <label for="resultado" id="labelResultados">Matches (resultados)</label>
+            <input type="text" id="resultado" class="form-control" value="" readonly />
+        </div>
+
+        <div class="form-group">
+            <label for="resultado" id="labelHighlight">Highlight</label>
+            <div id="highlightText" style="font-size:30px;"></div>
+        </div>
+        
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="form-group">
+
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+
+    </div>
+   <br />
+
+    <script src="js/regex.js"></script>
+    </body>
+</html>
+
+<!--
+? - significa que o elemento pode ou não ocorre UMA VEZ (0 ou 1)
++ - Significa que o elemento pode ocorre UMA ou mais vezes (1...)
+* - Significa que o elemento pode ocorrer 0 ou mais vezes
+
+{n} - Significa que o elemento pode ocorrer N vezes
+{n,} - Significa que o elemento pode ocorrer no mínimo N vezes
+{n,m} - Significa que o elemento pode ocorrer no mínimo n+1 vezes, no máximo M vezes
+
+\s - Significa espaço
+\w - Significa qualquer caractere [a-zA-Z0-9_]
+\f - Significa form feed
+\r - Significa carriage return
+\t - Significa tab
+^ - Significa que no início deve ter o conjunto de letras. O conjunto é colocado após o ^. Exemplo ^ABCD (no inícino deve ter a sequência ABCD)
+$ - Significa que no final deve ter o conjunto de letras. O conjunto é colcoado antes do $. Exemplo html$ (no final de ter a sequência html)
+\n - Significa nova linha
+\b - Significa o limite do caractere. Serve para pegar uma sequência de letras
+\d - Significa que quero digitos
+{X, Y} - Singifica um mutiplicador (X é o mínimo, Y é o máximo)
+. - Significa qualquer caractere
+\. - Significa ponto
+() - Defini um grupo. Ele serve para modificar um grupo de regras e não afetar as demais regras
+(?:) - Significa que um grupo não será selecionado na função que retorna um grupo
+[XYZ4567] - defini um conjunto de elementos, ou seja, um conjunto de elementos como [0-9] (conjunto de número de 0 até 9)
+
+
+\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3} = 123.123.123.123
+\d{3}\.?\d{3}\.?\d{3}[-,.]?\d{2} = 12345678900 ou 123.456.789-00 ou 123.456.789.00 ....
+[1-3]?\d\s+de\s+[A-Z, a-z]*[1-9]{4} = 28 de Dezembro de 1991
+[1-3]?\d\s+de\s+[A-Z][a-z]{1,8}\s+de\s+[1-9]{4} = 28 de Dezembro de 1991
+[1-3]?\d\s+de\s+[A-Z][a-zç]{1,8}\s+de\s+[1-9]{4} = 28 de Março de 1991
+([1-3]?\d)\s+(de\s+)?([A-Z][a-zç]{3,8})\s+(de\s+)?([12]\d{3}) = 21 de Maio de 1993 ou 21 Maio 1993
+
+Uma âncora não casa caracteres como as classes fazem, e nem definem quantidades. Âncoras marcam uma posição específica no alvo, por isso não
+é possível combiná-las com um quantifier.
+
+Existem várias âncoras predefinidas, mas as mais comuns são ^, $ e \b. Lembrando também que os caracteres ^ e $ são meta-chars.
+
+Vimos na aula o âncora\b (word boundary) para selecionar a posição antes ou depois de uma palavra.
+
+Existe a inversão do \b, o non-word-boundary: \B (B maiúsculo)
+
+Alvo: português proporcional compor
+
+Pattern: \Bpor\B
+
+A nossa regex seleciona a sílaba por, e antes e depois dela, deve ter um Non word boundary. Em outras palavras, a silaba por deve aparecer
+dentro de uma palavra, nunca no inicio ou fim.
+
+Non-Capturing group - (?:de\s+) (não deve devolver o grupo formado pela preposição de e por um \s)
+Quantifier - [a-z]? (a classe deve ocorrer zero ou uma vez)
+
+
+
+Z\d+(\w)
+Veja que usamos Z\d+ para indicar que queremos ter a letra Z seguido de um ou mais dígitos. Depois usamos
+Z\d+(\w), ou seja, nossa expressão irá selecionar todos os Z seguidos de um número que é seguido de qualquer
+letra ou número, inclusive _. Contudo, o \w esta entre parênteses e define um grupo. Isso significa que do
+resultado da expressão regular faremos uma nova pesquisa procurando quem é letra, número, inclusive _ da
+seleção. Com isso, extrairemos apenas as letras que seguem o prefixo Z(qualquer número).
+
+Em nosso testador de expressão regular teremos:
+
+Z171P ||| P | Z7A ||| A | Z23P ||| P | Z7819A ||| A | Z78G ||| G | Z1A ||| A | Z99I ||| I | Z34O ||| O
+
+
+^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$
+Vamos por partes na explicação:
+
+a regex usa âncoras no início ^ e fim $ para garantir o match inteiro;
+antes do @, temos: ^([\w-]\.?)+
+definimos uma classe com word-chars e hífen, seguido por um ponto opcional: [\w-]\.?
+essa classe pode se repetir uma ou mais vezes, então criamos um grupo e + ao final: ([\w-]\.?)+
+depois do @, temos:
+([\w-]+\.)+, que é bastante parecido com o anterior ao @, porém com o . obrigatório,
+([A-Za-z]{2,4})+$, que é o final da nossa regex, seleciona o domínio do email, como br, com, us. O mínimo de letras dessa parte final
+devem ser 2 e no máximo 4.
+Há vários exemplo complexos disponíveis na web, mas lembre-se que a autenticidade de um email só pode ser verificada enviando um email
+para usuário.
+
+Nome era necessário capturar, então iremos criar um grupo ([\w\s]+)\|
+
+Data de nascimento não era necessário, por isso, deixaremos esse grupo como non-capturing group (?:\d\d\/\d\d\/\d\d\d\d)\|
+
+Rua Onde Mora é necessário capturar, e por isso, criamos um grupo normal: ([\w\s]+)\|
+
+Número é necessário capturar, portanto: (\d{1,4})\|
+
+CEP é necessário capturar, e podemos criar um grupo dessa maneira: (\d{5}-\d{3})\|
+
+Cidade é a nossa última análise, e não é necessária. Portanto, basta adicionarmos ?: para deixar o seu grupo não-capturável: (?:[\w\s]{10,})
+
+([\w\s]+)\|(?:\d\d\/\d\d\/\d\d\d\d)\|([\w\s]+)\|(\d{1,4})\|(\d{5}-\d{3})\|(?:[\w\s]{10,})
+Nico Steppat|14/05/1977|Rua Buarque de Macedo|50|22222-222|Rio de Janeiro
+
+Romulo Henrique|14/06/1993|Rua do Lins|120|12345-322|Rio de Janeiro
+
+Leonardo Cordeiro|01/01/1995|Rua de Campo Grande|01|00001-234|Rio de Janeiro
+-->

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendendo IndexedDB</title>
+</head>
+<body>
+    <script src="js/app/models/Negociacao.js"></script>
+    <script>
+        var connection;
+
+        //fazendo uma requisição de abertura no banco de dados 'aluraframe'
+        //o segundo parametor é a versão do banco. No meu casom é 1
+        //toda vez que for necessário realizar uma alteração na estrutura do banco, eu devo acrescentar +1 no segundo parametro
+        // var openRequest = window.indexedDB.open('aluraframe', 1);
+        var openRequest = window.indexedDB.open('aluraframe', 2);
+
+        //toda vez que for me conectar no banco indexedDB, devo trabalhar com esses três eventos:
+        //o onupgradeneeded ele cria ou altera um banco já existente
+        // o onsuccess é executado se a operacao for bem sucedida
+        // o onerror é executado se a operacao for fracassada
+
+        openRequest.onupgradeneeded = e => {
+            console.log('Cria ou altera um banco já existente');
+
+            let minhaConnection = e.target.result;
+
+            if(minhaConnection.objectStoreNames.contains('negociacoes')) {
+                minhaConnection.deleteObjectStore('negociacoes');
+            }
+
+            minhaConnection.createObjectStore('negociacoes', { autoIncrement: true }); //criando uma coleção com chave autoincremental
+        };
+
+        openRequest.onsuccess = e => {
+            console.log('Conexão obtida com sucesso');
+
+            connection = e.target.result; //pegando o resultado
+        };
+
+        openRequest.onerror = e => {
+            console.log(e.target.error /*pegando a mensagem de erro*/);
+        };
+
+        function adiciona() {
+            let transaction = connection.transaction(['negociacoes'], 'readwrite'); //abrindo a transação na coleção negociacoes
+            let store = transaction.objectStore('negociacoes'); //solicitando acesso a transação. Através da store eu consigo fazer as operações de persistentes
+            let negociacao = new Negociacao(new Date(), 1, 200);
+            let request = store.add(negociacao); //solicitando a gravação e armazenando o resultado em uma variável
+
+            request.onsuccess = e => {
+                console.log('Negociação incluida com sucesso');
+            };
+
+            request.onerror = e => {
+                console.log('Não foi possível incluir a negociação');
+            };
+        }
+
+        function listaTodos() {
+            let transaction = connection.transaction(['negociacoes'], 'readwrite');
+            let store = transaction.objectStore('negociacoes');
+            let cursor = store.openCursor();
+            let negociacoes = [];
+
+            cursor.onsuccess = e => {
+                let atual = e.target.result; //pegando o ponteiro do dado. Se não tiver mais nada, o valor será null
+
+                if(atual) {
+                    let dado = atual.value; //pegando o valor (dados) do ponteiro
+
+                    negociacoes.push(new Negociacao(dado._data, dado._quantidade, dado._valor));
+
+                    atual.continue(); //passa para o próximo ponteiro
+                } else {
+                    console.log(negociacoes);
+                }
+            };
+
+            cursor.onerror = e => {
+                console.log(e.target.error.name);
+            };
+        }
+    </script>
+</body>
+</html>
+
+<!--
+O problema é que ele não atualizou a versão do banco. Quando um banco é criado pela primeira vez, ele guarda um número de versão. O evento onupgradeneeded só será disparado se a nova versão do banco, indicada para a função open, for superior à versão do banco no IndexedDB. Vejamos a linha que permite explicitar uma nova versão:
+
+var openRequest = window.indexedDB.open("aluraframe",1);
+Se o banco atual estiver na versão 1, nenhuma atualização será feita. Contudo, se alterar a versão para 2, o onupgradeneeded será disparado, porque a versão é superior à que está no IndexedDB:
+
+var openRequest = window.indexedDB.open("aluraframe",2);
+Temos que estar atentos para esses detalhes.
+-->

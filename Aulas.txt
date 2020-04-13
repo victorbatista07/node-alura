@@ -1,0 +1,74 @@
+Carreira Desenvolvedor JavaScript
+	HTTP: Entendendo a web por baixo dos panos (Curso feito em 02-Desenvolvedor-ASP-NET-MVC5)
+		01 - O que é HTTP?
+		02 - A web segura - HTTPS
+		03 - Endereços sob seu domínio
+		04 - O cliente pede e o servidor responde
+		05 - Depurando a requisição HTTP
+		06 - Parâmetros da requisição
+		07 - Serviços na web com REST
+		08 - HTTP2 - Por uma web mais eficiente
+	JavaScript: Programando na linguagem da web
+		01 - Introdução
+		02 - Variáveis e Operadores
+		03 - Arrays, Loop e Estilos
+		04 - Eventos, Formulários e Criando Elementos
+		05 - Boas Práticas com Javascript
+		06 - Validação de Formulários
+		07 - Remoção, Delegação e Animação
+		08 - Filtrando uma tabela
+		09 - AjaxBuscando pacientes com AJAX
+	Expressões regulares: Capturando textos de forma mágica
+		01 - Começando com Regex
+		02 - Classes de caracteres
+		03 - Encontrando a posição certa com âncoras
+		04 - Trabalhando com grupos
+		05 - Ganancioso ou preguiçoso
+		06 - Usando regex nas diversas linguagens
+	JavaScript Avançado I: ES6, orientação a objetos e padrões de projetos
+		01 - Prólogo: regras, código e manutenção
+		02 - Especificando uma Negociação
+		03 - A ligação entre as ações do usuário e o modelo
+		04 - Lidar com data é trabalhoso? Chame um ajudante!
+		05 - Temos o modelo, mas e a view?
+		06 - Generalizando a solução da nossa View
+	JavaScript Avançado II: ES6, orientação a objetos e padrões de projetos
+		01 - Como saber quando o modelo mudou?
+		02 - Existe modelo mentiroso? O padrão de projeto Proxy!
+		03 - E se alguém criasse nossos proxies? O Padrão de Projeto Factory
+		04 - Importando negociações
+		05 - Combatendo Callback Hell com Promises
+		06 - Considerações finais e exercícios bônus
+	JavaScript Avançado III: ES6, orientação a objetos e padrões de projetos
+		01 - Guardando negociações offline com IndexedDB
+		02 - Gerenciando nossa conexão com o pattern Factory
+		03 - Padronizando acesso aos dados com o pattern DAO
+		04 - Lapidando um pouco mais nossa aplicação
+		05 - Simplificando requisições Ajax com a Fetch API
+		06 - Tornando nosso código ainda mais compatível usando Babel
+		07 - Trabalhando com módulos do ES2015!
+	jQuery: Domine a biblioteca mais popular do mercado parte 1
+		01 - Introdução
+		02 - Escutando eventos com jQuery
+		03 - GameOver com eventos
+		04 - Reiniciando o jogo
+		05 - Funções que auxiliam os estilos
+		06 - Criando e Manipulando elementos com jQuery
+	jQuery: Avance na biblioteca mais popular do mercado parte 2
+		01 - Animações com jQuery
+		02 - Buscando frases via Ajax
+		03 - Tratando erros e melhorando a experiência
+		04 - Enviando dados com AJAX
+		05 - Enviando dados com POST
+		06 - Same Origin Policy e Cors
+		07 - Plugins do jQuery
+	JavaScript: Projeto de conclusão
+		01 - Introdução
+		02 - Sprite
+		03 - Lógica do jogo
+		04 - A lógica de apresentação
+		05 - Bônus: indo além com ES2015 (ES6)
+-------------------------------------------------------------------------------------------------------------------------
+Extra TypeScript
+	TypeScript parte 1: Evoluindo seu Javascript
+		01 - Bem começado, metade feito
